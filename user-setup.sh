@@ -22,6 +22,8 @@ echo "Appending bashrc >> $HOME_DIR/.bashrc"
 cat bashrc >> $HOME_DIR/.bashrc
 echo "Appending vimrc >> $HOME_DIR/.vimrc"
 cat vimrc >> $HOME_DIR/.vimrc
+echo "Appending tmux.conf >> $HOME_DIR/.tmux.conf"
+cat tmux.conf >> $HOME_DIR/.tmux.conf
 echo "Giving ownership of $HOME_DIR/ to $USER"
 chown -hR $USER:$USER $HOME_DIR/
 echo "Done."
