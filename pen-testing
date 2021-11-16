@@ -1,0 +1,10 @@
+nc -l <port>
+  check if port is in use
+
+netstat -tulpn
+  scan ports on local machine
+
+nmap -v -script vuln <hostname> -Pn
+  run the nmap vulnerabilities script against hostname
+  hostname can be remote or localhost
+  localhost will find open ports that might be protected by a firewall (compare running the nmap locally vs remotely)
