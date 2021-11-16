@@ -4,7 +4,12 @@ nc -l <port>
 netstat -tulpn
   scan ports on local machine
 
-nmap -v -script vuln <hostname> -Pn
+nmap -sV --script vulners <hostname> 
   run the nmap vulnerabilities script against hostname
   hostname can be remote or localhost
   localhost will find open ports that might be protected by a firewall (compare running the nmap locally vs remotely)
+  https://nmap.org/nsedoc/scripts/vulners.html
+  can add '-v' for verbose
+
+nmap --script vuln <hostname>
+  I believe this runs all of the vulnerabilities scripts in the link above
