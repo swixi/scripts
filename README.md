@@ -8,7 +8,7 @@ Run `./add-note.sh "New note"` to append "New note" to the bottom of `notes.txt`
 
 ### tar-home.sh
 
-Can be run from anywhere. Tars /home/\<user\> where <user> is the current user, and drops a tar file in the working directory.
+Can be run from anywhere. Tars /home/\<user\> where \<user\> is the current user, and drops a tar file in the working directory.
 
 ## If setting up a new Digital Ocean droplet
 
