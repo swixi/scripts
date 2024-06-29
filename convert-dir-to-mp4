@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Directory containing MKV files
+DIR="."
+
+for file in "$DIR"/*.mkv; do
+    output="${file%.mkv}.mp4"
+    
+    ffmpeg -i "$file" -c:v copy -c:a aac "$output"
+    
+    echo "Converted '$file' to '$output'"
+done
+
+echo "All conversions are complete."
+
